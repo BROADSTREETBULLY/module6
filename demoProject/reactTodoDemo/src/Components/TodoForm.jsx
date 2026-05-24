@@ -10,24 +10,24 @@ export default function TodoForm({ addTodo }) {
     addTodo(todo);
   };
   return (
-    <Form onSubmit={todoSubmitClick}>
-      <Form.Group as={Row} className="mb-3" controlId="formPlaintextTitle">
-        <Form.Label column sm="2">
-          Title
-        </Form.Label>
-        <Col sm="10">
-          <Form.Control
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-          />
-        </Col>
-      </Form.Group>
+      <Form onSubmit={todoSubmitClick}>
+        <Form.Group as={Row} className="mb-3" controlId="formPlaintextTitle">
+          <Form.Label column sm="2">
+            Title
+          </Form.Label>
+          <Col sm="10">
+            <Form.Control
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
+          </Col>
+        </Form.Group>
 
-      <Form.Group
-        as={Row}
-        className="mb-3"
-        controlId="formPlaintextDescription"
-      >
+        <Form.Group
+          as={Row}
+          className="mb-3"
+          controlId="formPlaintextDescription"
+        >
         <Form.Label column sm="2">
           Description
         </Form.Label>
