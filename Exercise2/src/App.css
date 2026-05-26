@@ -189,4 +189,6 @@
   list-style: none;
   border: red solid 1px;
   margin: 5px;
+  padding: 5px;
+  width: 200px;
 }
