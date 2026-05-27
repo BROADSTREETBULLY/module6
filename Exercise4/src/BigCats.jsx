@@ -78,8 +78,12 @@ const [currentCats, setCurrentCatsList] = useState(cats)
   }
 
 const filterByLatinName = () => {
-    const results = currentCats.filter(newCats.includes("Panthera"));
+    const results = cats.filter(cat => cat.latinName.includes("Panthera"));
     setCurrentCatsList(results);
+}
+
+const resetCats = () => {
+ setCurrentCatsList(cats)
 }
   return (
     
@@ -87,6 +91,7 @@ const filterByLatinName = () => {
         <button onClick={handleReverseCatsList}> Reverse List</button>
         <button onClick={handleAlphaCatsList}> Sort Alphabetically</button>
         <button onClick={filterByLatinName}>Show Panthera Family Only</button>
+        <button onClick={resetCats}>Reset</button>
       <ul>{ catItems }</ul>
     
     </div>

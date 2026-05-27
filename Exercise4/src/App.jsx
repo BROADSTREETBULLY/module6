@@ -7,6 +7,7 @@ function App() {
   return (
     <>
     <div>
+      <h1>Big Cats List</h1>
       <BigCatsList></BigCatsList>
       </div>
       
