@@ -1,6 +1,8 @@
 import "./App.css";
 import BigCatsList from "./BigCats";
+import ExplodingBomb from "./ExplodingBomb";
 import SingleCat from "./SingleCat";
+
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
      
       <BigCatsList></BigCatsList>
       </div>
+
+      {/* <ExplodingBomb></ExplodingBomb> */}
       
     </>
   );
